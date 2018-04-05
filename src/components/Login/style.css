@@ -1,0 +1,19 @@
+.login-form{
+    min-width: 400px;
+    min-height: 400px;
+    margin: 0 auto;
+    align-self: center;
+    text-align: center;
+    &__header{
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        background: #FFE4B5;
+        padding: 16px;
+    }
+    &__body{
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        padding: 16px;
+        background: #E0FFFF
+    }
+}
