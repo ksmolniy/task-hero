@@ -7,10 +7,10 @@ class Login extends Component {
         super(props); 
 
         let hash = props.location.hash;
-        let baseUrl = window.location.host;
+        let baseUrl = window.location.origin;
         let nameApp = 'Task Hero';
         
-        this.trelloUrl = `https://trello.com/1/authorize?expiration=1day&name=${nameApp}&scope=read&response_type=token&key=b4228bf7a7fae3dd244e6f74e8fb9816&return_url=${baseUrl}auth/`;
+        this.trelloUrl = `https://trello.com/1/authorize?expiration=1day&name=${nameApp}&scope=read&response_type=token&key=b4228bf7a7fae3dd244e6f74e8fb9816&return_url=${baseUrl}/auth/`;
         this.logined = false;
 
         this.token = hash ? hash.split('=')[1] : this.getTokenFromLocalStorage();
