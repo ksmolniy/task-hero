@@ -1,0 +1,5 @@
+.role-selector{
+    &__header{
+        padding-bottom: 12px;
+    }
+}

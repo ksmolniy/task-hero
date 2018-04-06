@@ -7,7 +7,7 @@ class AvatarSelector extends Component{
     constructor(props){
         super(props);
 
-        let {defaultAvatars, selected} = props;
+        let {defaultAvatars, selected, avatarChoosed} = props;
 
 
         this.state = {
@@ -16,12 +16,15 @@ class AvatarSelector extends Component{
             isCustomAvatar: !defaultAvatars.some(item=>item=== selected)
         };
 
+
+        this.avatarChoosedCallback = avatarChoosed;
     }
     
     selectAvatar(avatar) {
         this.setState({
             selectedAvatar: avatar
         })
+        this.avatarChoosedCallback(avatar);
     }
 
     selectDefaultAvatar(avatar) {
