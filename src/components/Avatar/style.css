@@ -1,0 +1,20 @@
+.avatar{
+    width: 52px;
+    height: 52px;
+    margin-right: 16px;
+    transform: all 0.5s ease;
+    border: 3px solid #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    &.selected{
+        border-color: #0000CD;
+    }
+    & > img{
+        border-radius: 50%;
+        width: 52px;
+        height: 52px;
+    }
+    &:last-child{
+        margin-right: 0px;
+    }
+}

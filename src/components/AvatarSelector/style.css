@@ -1,0 +1,9 @@
+.avatar-selector{
+    
+    &__list{
+        display: flex;
+    }
+    &__header{
+        padding-bottom: 12px;
+    }    
+}

@@ -1,0 +1,21 @@
+.link-avatar-selector{
+    display: flex;
+    padding-top: 54px;
+    &__avatar{
+        width: 60px;
+    }
+    &__input{
+        width: 100%;
+        display: flex;
+        padding-left: 24px;
+        & input{
+            padding-left: 8px;
+            box-sizing: border-box;
+            width: 100%;
+            align-self: center;
+            font-size: 2rem;
+            border-radius: 5px;
+            border: 3px solid #ddd
+        }
+    }
+}
